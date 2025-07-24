@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/udham-singh-international-foundation/static/css/main.57260acb.css",
-    "main.js": "/udham-singh-international-foundation/static/js/main.dec090e5.js",
+    "main.js": "/udham-singh-international-foundation/static/js/main.216f19a9.js",
     "static/js/453.5a610cc7.chunk.js": "/udham-singh-international-foundation/static/js/453.5a610cc7.chunk.js",
     "static/media/udham_singh1.png": "/udham-singh-international-foundation/static/media/udham_singh1.d1c1acfb58351838678c.png",
     "static/media/udham_singh31.png": "/udham-singh-international-foundation/static/media/udham_singh31.8e5299ba67c870143fc4.png",
@@ -10,11 +10,11 @@
     "static/media/udham_singh5.jpeg": "/udham-singh-international-foundation/static/media/udham_singh5.a33e2507617b16c177f3.jpeg",
     "index.html": "/udham-singh-international-foundation/index.html",
     "main.57260acb.css.map": "/udham-singh-international-foundation/static/css/main.57260acb.css.map",
-    "main.dec090e5.js.map": "/udham-singh-international-foundation/static/js/main.dec090e5.js.map",
+    "main.216f19a9.js.map": "/udham-singh-international-foundation/static/js/main.216f19a9.js.map",
     "453.5a610cc7.chunk.js.map": "/udham-singh-international-foundation/static/js/453.5a610cc7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.57260acb.css",
-    "static/js/main.dec090e5.js"
+    "static/js/main.216f19a9.js"
   ]
 }
