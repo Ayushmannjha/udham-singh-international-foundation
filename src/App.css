@@ -13,7 +13,10 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.navbar-brand-logo{
+  height: 40px;
+  width: 40px;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -34,12 +37,12 @@
 
 .carousel-item img {
   width: 100%;
-  height: 100vh;
-object-fit: fill; /* default */
+  height: 500px;
+/* default */
  /* default: fill and crop if needed */
 }
 .brand-name {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
 font-family: "Poppins", sans-serif;
   color: #d97706; /* saffron-ish */
@@ -50,16 +53,12 @@ font-family: "Poppins", sans-serif;
 .brand-name span {
   color: #1f2937; /* dark gray for contrast */
   font-weight: 400;
+  font-family: "Poppins", sans-serif;
 }
 
 
 /* On large screens, show full image with padding (no cropping) */
-@media (min-width: 992px) {
-  .carousel-item img {
-    object-fit: fill;
-    background-color: #000; /* optional: fills empty space with black */
-  }
-}
+
 .card-body:hover {
   background-color: azure;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);

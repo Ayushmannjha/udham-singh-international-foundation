@@ -1,12 +1,15 @@
 import React, { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import udham1 from './assets/udham_singh1.png';
+import udham3 from './assets/udham_singh1.png';
 import udham2 from './assets/udham_singh21.png';
-import udham3 from './assets/udham_singh31.png';
-import udham4 from './assets/udham_singh4.jpeg';
+import udham4 from './assets/udham_singh31.png';
+import udham1 from './assets/udham_singh4.jpeg';
 import udham5 from './assets/udham_singh5.jpeg';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import logo from './assets/logo (2).png'
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // ✅ Required for toggles, dropdowns, etc.
 
@@ -49,6 +52,9 @@ useEffect(() => {
     if (prevBtn) prevBtn.removeEventListener('click', showPrev);
   };
 }, []);
+useEffect(() => {
+  AOS.init({ duration: 1000 }); // animation duration in ms
+}, []);
 
   const images = [udham1, udham2, udham3, udham4, udham5];
   return (
@@ -56,7 +62,8 @@ useEffect(() => {
       {/* Navbar */}
       <nav className="navbar navbar-expand-lg navbar-light bg-white sticky-top border-bottom shadow-sm">
   <div className="container-fluid">
-   <p class="brand-name">Saheed Udham Singh <span>International Foundation</span></p>
+
+   <p class="brand-name"><img src={logo} alt="Udham Singh Logo" className="navbar-brand-logo" />Saheed Udham Singh <span>International Foundation</span></p>
 
     <button
   className="navbar-toggler"
@@ -121,40 +128,39 @@ useEffect(() => {
 
     <div className="row">
       {/* Card 1 */}
-      <div className="col-md-4 mb-4">
-        <div className="card h-100 shadow-sm">
-          <div className="card-body">
-            <h5 className="card-title">Our Mission</h5>
-            <p className="card-text">
-              We aim to spread awareness about the values and sacrifices of Udham Singh through education and outreach.
-            </p>
-          </div>
-        </div>
-      </div>
+      <div className="col-md-4 mb-4" data-aos="fade-up">
+  <div className="card h-100 shadow-sm">
+    <div className="card-body">
+      <h5 className="card-title">Our Mission</h5>
+      <p className="card-text">
+        We aim to spread awareness about the values and sacrifices of Udham Singh through education and outreach.
+      </p>
+    </div>
+  </div>
+</div>
 
-      {/* Card 2 */}
-      <div className="col-md-4 mb-4">
-        <div className="card h-100 shadow-sm">
-          <div className="card-body">
-            <h5 className="card-title">Our Vision</h5>
-            <p className="card-text">
-              To create a society inspired by patriotism, social justice, and unity—values championed by Udham Singh.
-            </p>
-          </div>
-        </div>
-      </div>
+<div className="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+  <div className="card h-100 shadow-sm">
+    <div className="card-body">
+      <h5 className="card-title">Our Vision</h5>
+      <p className="card-text">
+        To create a society inspired by patriotism, social justice, and unity—values championed by Udham Singh.
+      </p>
+    </div>
+  </div>
+</div>
 
-      {/* Card 3 */}
-      <div className="col-md-4 mb-4">
-        <div className="card h-100 shadow-sm">
-          <div className="card-body">
-            <h5 className="card-title">What We Do</h5>
-            <p className="card-text">
-              Organize events, seminars, and campaigns that promote youth engagement, history awareness, and national pride.
-            </p>
-          </div>
-        </div>
-      </div>
+<div className="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+  <div className="card h-100 shadow-sm">
+    <div className="card-body">
+      <h5 className="card-title">What We Do</h5>
+      <p className="card-text">
+        Organize events, seminars, and campaigns that promote youth engagement, history awareness, and national pride.
+      </p>
+    </div>
+  </div>
+</div>
+
     </div>
   </div>
 </section>
